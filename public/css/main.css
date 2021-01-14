@@ -1,0 +1,249 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap);
+@import url(https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css);
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #1d1d1d;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  body.js-stop-transition * { 
+    transition: none !important; 
+  }
+  
+  h1 {
+    font-size: 100px;
+    padding: 25px;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 75px;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  h4 {
+    font-size: 50px;
+    padding: 5px;
+  }
+  
+  li {
+    margin-bottom: 40px;
+  }
+  
+  a:active, a:focus, a:visited {
+    color: #58ff66;
+    transition: 1s;
+  }
+  
+  a:hover {
+    color: #58ff66;
+    transition: 1s;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 75px;
+      transition: 1s;
+    }
+    h2 {
+      font-size: 40px;
+      transition: 1s;
+    }
+  }
+  
+  /* Icon Bar */
+  
+  .icon-bar {
+    width: 75px;
+    height: 100%;
+    position: fixed;
+    background-color: #181818;
+    transition: 1s;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    transition: 1s;
+  }
+  
+  .socials {
+    position: fixed;
+    width: 75px;
+    bottom: 0%;
+    transition: 1s;
+  }
+  
+  .current i {
+    color: #58ff66;
+  }
+  
+  #icon:hover {
+    transition: 1s;
+    background-color: #000;
+  }
+  
+  #social:hover {
+    transition: 1s;
+    color: #c2c2c2;
+  }
+  
+  @media only screen and (max-height: 388px) {
+    .socials {
+      display: none;
+    }
+    .icon-bar {
+      width: 50px;
+    }
+    .icon-bar a {
+      font-size: 10px;
+      padding: 10px;
+    }
+  }
+  
+  /* Scrollbar */
+  
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #58ff66; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #58ff66; 
+  }
+  
+  /* Position */
+  
+  .center-position {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 60%;
+    max-height: 50%;
+  }
+
+  .project-position {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 60%;
+    max-height: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .center-position {
+      left: 27%;
+    }
+    .project-position {
+        left: 27%;
+    }
+  }
+  
+  @media only screen and (max-height: 388px) {
+    .center-position {
+      left: 15%;
+    }
+    .project-position {
+        left: 15%;
+    }
+  }
+  
+  /* Green Fade */
+  
+  .green-fade {
+    color: white;
+    padding-left: 0;
+    text-decoration: none;
+    background: linear-gradient(to right, #FFF 50%, #58ff55 50%, #58ff66);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+  }
+   
+  .green-fade:hover {
+    background-position: -100%;
+    background-color: white;
+    transition: 1s;
+  }
+  
+  /* Home Page */
+  
+  #home-header {
+    font-size: 90px;
+  }
+
+  #home-des {
+    font-size: 50px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #home-header {
+      font-size: 45px;
+    }
+  }
+  
+  /* Project Page */
+  
+  .project {
+    color: white;
+    font-size: 25px;
+  }
+  
+  .project h3 {
+    margin: 0;
+    font-size: 35px;
+  }
+  
+  .project p {
+    margin: 10px;
+  }
+  
+  /* Error Page */
+
+  
+  #error-num {
+    -webkit-text-fill-color: white;
+    background: none;
+    border: 0;
+  }
+
+  
+  .home-button:hover {
+    background-color: #58ff66;
+    transition: 1s;
+  }
